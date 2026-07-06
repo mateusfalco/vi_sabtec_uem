@@ -1,0 +1,21 @@
+{
+    "name": "Start Bioinfo 26 - Master",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest",
+            "moby": true
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "nextflow.nextflow",
+                "ms-vsliveshare.vsliveshare"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}
