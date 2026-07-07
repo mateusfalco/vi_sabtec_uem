@@ -1,14 +1,14 @@
-#  Desafio Prático: Vigilância Genômica com [nf-core/viralrecon](https://nf-co.re/viralrecon/3.0.0)
+# Desafio Prático: Análise de Microbioma (FMT) com nf-core/ampliseq
 
-Bem-vindos à atividade complementar do curso **Bioinformática Reprodutível: Automatizando pipelines com Nextflow e nf-core** (VI Semana Acadêmica de Biotecnologia - CABTEC/UEM).
+Bem-vindos à atividade complementar do minicurso **Bioinformática Reprodutível: Automatizando pipelines com Nextflow e nf-core** (VI Semana Acadêmica de Biotecnologia - CABTEC/UEM).
 
-Esta atividade prática tem como objetivo consolidar os conceitos vistos em aula, permitindo que você execute de forma autônoma um pipeline profissional de bioinformática para identificar variantes do vírus SARS-CoV-2 a partir de dados brutos de sequenciamento.
+Esta atividade prática tem como objetivo consolidar os conceitos vistos em aula. Você irá executar de forma autônoma o mesmo pipeline profissional demonstrado na teoria para avaliar a composição taxonômica de uma amostra de microbioma (utilizando dados de sequenciamento amplicon 16S).
 
 > **⚠️ ATENÇÃO - REQUISITO PARA CERTIFICAÇÃO**
 > A realização desta atividade e o preenchimento do formulário de avaliação são **obrigatórios** para a validação da sua carga horária e emissão do certificado de participação.
 > 
 > **📅 Prazo final para envio:** 09 de julho de 2026, até às 23h00.
-> **🔗 Link para envio (Formulário):** [FORMULÁRIO](https://forms.gle/t2n81D7dcCGzx5RJ6)
+> **🔗 Link para envio (Formulário):** [FORMULÁRIO]()
 
 ---
 
@@ -17,56 +17,54 @@ Esta atividade prática tem como objetivo consolidar os conceitos vistos em aula
 Para garantir que todos tenham a mesma experiência sem depender do hardware local, utilizaremos as ferramentas em nuvem abordadas em aula.
 
 1. Faça login na sua conta do **GitHub**.
-2. Acesse o repositório do minicurso: `https://github.com/mateusfalco/vi_sabtec_uem`.
-3. Abra o repositório em seu ambiente de desenvolvimento em nuvem (recomendamos o uso do **GitHub Codespaces**).
+2. Acesse o repositório do minicurso: `https://github.com/mateusfalco/start_bioinfo_26`.
+3. Abra o repositório em seu ambiente de desenvolvimento em nuvem (recomendamos o **GitHub Codespaces**).
 4. Aguarde o ambiente carregar completamente e abra o terminal integrado.
 
 ## Passo 2: Criação do Arquivo de Entrada (Samplesheet)
 
-Pipelines profissionais precisam de um arquivo de mapeamento (*samplesheet*) para entender a origem e a organização dos dados. Para este desafio, utilizaremos a amostra pública de acesso **SRR28464539**.
+Para o pipeline entender quais amostras processar, precisamos criar uma planilha de mapeamento. Analisaremos o dataset de acesso público **SRR38093667**.
 
-1. No diretório principal do seu ambiente, crie um arquivo chamado `samplesheet_extra.csv`.
+1. No diretório principal do seu ambiente, crie um arquivo chamado `samplesheet.csv`.
 2. Copie e cole o texto exato abaixo dentro do arquivo e salve:
 
 ```csv
 sample,fastq_1,fastq_2
-SRR28464539,,,
+SRR38093667,,,
 ```
 
 ## Passo 3: Execução do Pipeline Nextflow
 
-Com o ambiente e a amostra configurados, é hora de rodar a análise. O Nextflow cuidará do download do pipeline, da gestão dos contêineres e da orquestração das tarefas (como FastQC, alinhamento e variant calling).
+Agora vamos acionar o Nextflow. Ele cuidará do controle de qualidade (FastQC), da inferência de variantes de amplicon (DADA2) e da classificação taxonômica através do pipeline ampliseq.
 
 Copie o comando abaixo, cole no seu terminal e pressione Enter:
 
 ```bash
-nextflow run nf-core/viralrecon \
+nextflow run nf-core/ampliseq \
   -profile docker \
   --input samplesheet.csv \
-  --outdir ./resultados_viralrecon \
-  --platform illumina \
-  --protocol amplicon \
-  --genome 'NC_045512.2' \
-  --skip_kraken2
+  --outdir ./resultados_ampliseq \
+  --FW_primer GTGYCAGCMGCCGCGGTAA \
+  --RV_primer GGACTACNVGGGTWTCTAAT
 ```
-Dica: O processo levará alguns minutos. Observe o log na tela prestando atenção em como as tarefas são submetidas e concluídas.
+Nota: Os parâmetros de primer acima correspondem à região V4 do gene 16S rRNA, padrão ouro para estudos de microbioma).
 
 ## Passo 4: Análise dos Resultados
 
-Quando a execução terminar 100% com sucesso, uma nova pasta chamada resultados_viralrecon aparecerá no seu menu lateral.
+Quando a execução terminar com sucesso, uma nova pasta chamada resultados_ampliseq aparecerá. O pipeline ampliseq gera saídas muito ricas, incluindo gráficos em PDF/HTML de diversidade.
 
-   1. Navegue até o diretório resultados_viralrecon/multiqc/illumina/.
+   1. Navegue até o diretório resultados_ampliseq/multiqc/.
 
-   2. Faça o download do arquivo multiqc_report.html para o seu computador.
+   2. Faça o download do arquivo multiqc_report.html para o seu computador e abra-o no navegador.
 
-   3. Abra este arquivo em qualquer navegador web.
+   3. Explore as métricas de qualidade das leituras e a porcentagem de sequências retidas após a filtragem do DADA2.
 
-   4. Explore as métricas de qualidade interativas, a taxa de alinhamento e o sumário de variantes encontradas.
+   4. Navegue também pela pasta resultados_ampliseq/qiime2/ ou dada2/ para visualizar as tabelas de abundância taxonômica.
 
 ## Passo 5: Avaliação e Envio
 
-Após analisar criticamente o seu relatório MultiQC, acesse o formulário oficial e responda às questões propostas sobre os resultados que você obteve.
+Após analisar criticamente o seu relatório, acesse o formulário oficial e responda às questões sobre os resultados que você obteve.
 
-[Formulário de Avaliação e Envio de Atividade - Clique Aqui](https://forms.gle/t2n81D7dcCGzx5RJ6)
+🔗 [Formulário de Avaliação e Envio de Atividade - Clique Aqui]()
 
 Bom trabalho e excelente análise!
