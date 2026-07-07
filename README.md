@@ -1,9 +1,9 @@
 <div align="center">
 
-# VI Semana de Academica de Biotecnologia
+# VI Semana de Acadêmica de Biotecnologia
 *Introdução ao Nextflow e Bioinformática Reprodutível*
 
-<img src="img/start_bioinfo_26_header.png" alt="Start Bioinfo 26 Logo"/>
+<img src="img/sbatec_uem.jpg" alt="VI SBATEC Logo"/>
 
 </div>
 
