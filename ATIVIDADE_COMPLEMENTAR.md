@@ -8,7 +8,7 @@ Esta atividade prática tem como objetivo consolidar os conceitos vistos em aula
 > A realização desta atividade e o preenchimento do formulário de avaliação são **obrigatórios** para a validação da sua carga horária e emissão do certificado de participação.
 > 
 > **📅 Prazo final para envio:** 09 de julho de 2026, até às 23h00.
-> **🔗 Link para envio (Formulário):** [FORMULÁRIO]()
+> **🔗 Link para envio (Formulário):** [FORMULÁRIO](https://forms.gle/L1rAmGavWcmDMPvo9)
 
 ---
 
@@ -65,6 +65,6 @@ Quando a execução terminar com sucesso, uma nova pasta chamada resultados_ampl
 
 Após analisar criticamente o seu relatório, acesse o formulário oficial e responda às questões sobre os resultados que você obteve.
 
-🔗 [Formulário de Avaliação e Envio de Atividade - Clique Aqui]()
+🔗 [Formulário de Avaliação e Envio de Atividade - Clique Aqui](https://forms.gle/L1rAmGavWcmDMPvo9)
 
 Bom trabalho e excelente análise!
