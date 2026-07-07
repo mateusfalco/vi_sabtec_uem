@@ -98,6 +98,19 @@ Para gerar gráficos de publicação sem precisar instalar o R na sua máquina, 
 * Resultado: Abra a pasta `resultados/` no explorador do VS Code e clique nas imagens `.png` para visualizar a evolução taxonômica e a substituição das comunidades do camundongo pela do doador humano.
 
 ---
+## Atividade Prática Complementar (Obrigatória)
+
+Para consolidar tudo o que aprendemos durante o minicurso, preparamos um desafio prático final. Vocês farão a execução autônoma do pipeline nf-core/viralrecon para identificar variantes do vírus SARS-CoV-2 a partir de dados reais de sequenciamento.
+
+⚠️ Atenção: A realização deste desafio e o preenchimento do formulário de avaliação são requisitos obrigatórios para a validação da carga horária e emissão do certificado pelo CABTEC.
+
+📅 Prazo de entrega: 09 de julho de 2026, até às 23h.
+
+👉 Clique aqui para acessar o passo a passo da Atividade Complementar
+
+
+
+---
 
 ## Materiais de Apoio
 
