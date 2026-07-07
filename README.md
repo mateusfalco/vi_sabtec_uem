@@ -70,7 +70,7 @@ Para processar os dados brutos e gerar as matrizes de abundância com resoluçã
 
 ```bash
 nextflow run nf-core/ampliseq \
-  -r 2.16.1 \
+  -r 2.18.0 \
   -profile docker \
   -c nextflow.config \
   --input samplesheet.csv \
