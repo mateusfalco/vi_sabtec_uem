@@ -14,7 +14,7 @@ A bioinformática moderna exige reprodutibilidade, escalabilidade e controle rig
 <br>
 
 <div align="center">
-  <a href="https://codespaces.new/mateusfalco/start_bioinfo_26">
+  <a href="https://codespaces.new/mateusfalco/vi_sabtec_uem">
     <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces" height="40" />
   </a>
   <p><i>Clique acima para iniciar o ambiente de prática.</i></p>
