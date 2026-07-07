@@ -72,13 +72,11 @@ Para processar os dados brutos e gerar as matrizes de abundância com resoluçã
 nextflow run nf-core/ampliseq \
   -r 2.16.1 \
   -profile docker \
+  -c nextflow.config \
   --input samplesheet.csv \
-  --FW_primer "GTGYCAGCMGCCGCGGTAA" \
-  --RV_primer "GGACTACNVGGGTWTCTAAT" \
+  --FW_primer GTGYCAGCMGCCGCGGTAA \
+  --RV_primer GGACTACNVGGGTWTCTAAT \
   --outdir ./resultados \
-  --skip_cutadapt \
-  --trunclenf 240 \
-  --trunclenr 200 \
   -resume
 ```
 
