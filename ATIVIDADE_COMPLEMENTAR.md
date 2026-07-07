@@ -8,7 +8,7 @@ Esta atividade prática tem como objetivo consolidar os conceitos vistos em aula
 > A realização desta atividade e o preenchimento do formulário de avaliação são **obrigatórios** para a validação da sua carga horária e emissão do certificado de participação.
 > 
 > **📅 Prazo final para envio:** 09 de julho de 2026, até às 23h00.
-> **🔗 Link para envio (Formulário):** [INSERIR O LINK DO GOOGLE FORMS AQUI]
+> **🔗 Link para envio (Formulário):** [FORMULAÁRIO](https://forms.gle/t2n81D7dcCGzx5RJ6)
 
 ---
 
@@ -66,6 +66,6 @@ Quando a execução terminar 100% com sucesso, uma nova pasta chamada resultados
 
 Após analisar criticamente o seu relatório MultiQC, acesse o formulário oficial e responda às questões propostas sobre os resultados que você obteve.
 
-[Formulário de Avaliação e Envio de Atividade - Clique Aqui]
+[Formulário de Avaliação e Envio de Atividade - Clique Aqui](https://forms.gle/t2n81D7dcCGzx5RJ6)
 
 Bom trabalho e excelente análise!
