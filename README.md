@@ -106,7 +106,7 @@ Para consolidar tudo o que aprendemos durante o minicurso, preparamos um desafio
 
 📅 Prazo de entrega: 09 de julho de 2026, até às 23h.
 
-👉 Clique aqui para acessar o passo a passo da Atividade Complementar
+👉 [Clique aqui para acessar o passo a passo da Atividade Complementar](ATIVIDADE_COMPLEMENTAR.md)
 
 
 
