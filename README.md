@@ -27,7 +27,7 @@ Para que nosso foco seja inteiramente científico e prático, abstraímos a barr
 <br>
 
 <div align="center">
-  <h3>Gravação Oficial do Minicurso</h3>
+  <h3>Gravação Oficial do Curso Start Bioinfo 26</h3>
   <a href="https://www.youtube.com/watch?v=tKOzPr_Evxw" target="_blank">
     <img src="https://img.youtube.com/vi/tKOzPr_Evxw/maxresdefault.jpg" alt="Start Bioinfo 2026 - Introdução ao Nextflow - dia 04" width="700" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </a>
