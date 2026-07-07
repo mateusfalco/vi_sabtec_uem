@@ -1,5 +1,5 @@
 {
-    "name": "Start Bioinfo 26 - Master",
+    "name": "VI SABTEC UEM - Master",
     "build": {
         "dockerfile": "Dockerfile"
     },
