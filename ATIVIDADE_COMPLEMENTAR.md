@@ -1,6 +1,6 @@
-#� Desafio Prático: Vigilância Genômica com [nf-core/viralrecon](https://nf-co.re/viralrecon/3.0.0)
+#  Desafio Prático: Vigilância Genômica com [nf-core/viralrecon](https://nf-co.re/viralrecon/3.0.0)
 
-Bem-vindos à atividade complementar do minicurso **Bioinformática Reprodutível: Automatizando pipelines com Nextflow e nf-core** (VI Semana Acadêmica de Biotecnologia - CABTEC/UEM).
+Bem-vindos à atividade complementar do curso **Bioinformática Reprodutível: Automatizando pipelines com Nextflow e nf-core** (VI Semana Acadêmica de Biotecnologia - CABTEC/UEM).
 
 Esta atividade prática tem como objetivo consolidar os conceitos vistos em aula, permitindo que você execute de forma autônoma um pipeline profissional de bioinformática para identificar variantes do vírus SARS-CoV-2 a partir de dados brutos de sequenciamento.
 
@@ -8,7 +8,7 @@ Esta atividade prática tem como objetivo consolidar os conceitos vistos em aula
 > A realização desta atividade e o preenchimento do formulário de avaliação são **obrigatórios** para a validação da sua carga horária e emissão do certificado de participação.
 > 
 > **📅 Prazo final para envio:** 09 de julho de 2026, até às 23h00.
-> **🔗 Link para envio (Formulário):** [FORMULAÁRIO](https://forms.gle/t2n81D7dcCGzx5RJ6)
+> **🔗 Link para envio (Formulário):** [FORMULÁRIO](https://forms.gle/t2n81D7dcCGzx5RJ6)
 
 ---
 
@@ -50,17 +50,18 @@ nextflow run nf-core/viralrecon \
   --skip_kraken2
 ```
 Dica: O processo levará alguns minutos. Observe o log na tela prestando atenção em como as tarefas são submetidas e concluídas.
-Passo 4: Análise dos Resultados
+
+## Passo 4: Análise dos Resultados
 
 Quando a execução terminar 100% com sucesso, uma nova pasta chamada resultados_viralrecon aparecerá no seu menu lateral.
 
-    Navegue até o diretório resultados_viralrecon/multiqc/illumina/.
+   1. Navegue até o diretório resultados_viralrecon/multiqc/illumina/.
 
-    Faça o download do arquivo multiqc_report.html para o seu computador.
+   2. Faça o download do arquivo multiqc_report.html para o seu computador.
 
-    Abra este arquivo em qualquer navegador web.
+   3. Abra este arquivo em qualquer navegador web.
 
-    Explore as métricas de qualidade interativas, a taxa de alinhamento e o sumário de variantes encontradas.
+   4. Explore as métricas de qualidade interativas, a taxa de alinhamento e o sumário de variantes encontradas.
 
 ## Passo 5: Avaliação e Envio
 
