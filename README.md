@@ -3,7 +3,7 @@
 # VI Semana de Acadêmica de Biotecnologia
 *Introdução ao Nextflow e Bioinformática Reprodutível*
 
-<img src="img/sbatec_uem.jpg" alt="VI SBATEC Logo"/>
+<img src="img/sabtec_uem.jpg" alt="VI SABTEC Logo"/>
 
 </div>
 
