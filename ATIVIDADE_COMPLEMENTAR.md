@@ -30,7 +30,7 @@ Para o pipeline entender quais amostras processar, precisamos criar uma planilha
 
 ```csv
 sampleID,forwardReads,reverseReads,run
-SRR38093667,,,
+SRR38093667,./data/extra/SRR38096734_1.fastq.gz,./data/extra/SRR38096734_2.fastq.gz,1
 ```
 
 ## Passo 3: Execução do Pipeline Nextflow

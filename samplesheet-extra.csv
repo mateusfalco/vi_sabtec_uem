@@ -1,5 +1,2 @@
 sampleID,forwardReads,reverseReads,run
-S00_19022_Human_Stool,./data/fmt/SRR38096734_1.fastq.gz,./data/fmt/SRR38096734_2.fastq.gz,1
-S01_19022_Mouse2_D23,./data/fmt/SRR38096774_1.fastq.gz,./data/fmt/SRR38096774_2.fastq.gz,1
-S02_19022_Mouse2_D7,./data/fmt/SRR38097380_1.fastq.gz,./data/fmt/SRR38097380_2.fastq.gz,1
-S03_19022_Mouse2_D27,./data/fmt/SRR38097389_1.fastq.gz,./data/fmt/SRR38097389_2.fastq.gz,1
+SRR34798367,./data/SRR38096734_1.fastq.gz,./data/SRR38096734_2.fastq.gz,1
