@@ -23,13 +23,13 @@ Para garantir que todos tenham a mesma experiência sem depender do hardware loc
 
 ## Passo 2: Criação do Arquivo de Entrada (Samplesheet)
 
-Para o pipeline entender quais amostras processar, precisamos criar uma planilha de mapeamento. Analisaremos o dataset de acesso público **SRR38093667**.
+Para o pipeline entender quais amostras processar, precisamos criar uma planilha de mapeamento. Analisaremos o dataset de acesso público **SRR34798367**.
 
 1. No diretório principal do seu ambiente, crie um arquivo chamado `samplesheet.csv`.
 2. Copie e cole o texto exato abaixo dentro do arquivo e salve:
 
 ```csv
-sample,fastq_1,fastq_2
+sampleID,forwardReads,reverseReads,run
 SRR38093667,,,
 ```
 
@@ -41,11 +41,13 @@ Copie o comando abaixo, cole no seu terminal e pressione Enter:
 
 ```bash
 nextflow run nf-core/ampliseq \
+  -r 2.18.0 \
   -profile docker \
-  --input samplesheet.csv \
-  --outdir ./resultados_ampliseq \
+  -c nextflow.config \
+  --input samplesheet-extra.csv \
   --FW_primer GTGYCAGCMGCCGCGGTAA \
-  --RV_primer GGACTACNVGGGTWTCTAAT
+  --RV_primer GGACTACNVGGGTWTCTAAT \
+  --outdir ./atividade \
 ```
 Nota: Os parâmetros de primer acima correspondem à região V4 do gene 16S rRNA, padrão ouro para estudos de microbioma).
 
